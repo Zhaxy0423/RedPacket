@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @author 渣小宇 
+ * @author 渣小宇
  */
 @Controller
 public class StationController {
