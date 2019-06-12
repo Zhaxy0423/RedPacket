@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
+ * jsp页面中转跳转
  * @author 渣小宇
  */
 @Controller
