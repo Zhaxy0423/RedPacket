@@ -32,4 +32,5 @@ public class UserRedPacketController {
         redPacketMap.put("message",flag ? "抢红包成功":"抢红包失败");
         return redPacketMap;
     }
+
 }

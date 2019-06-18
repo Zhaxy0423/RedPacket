@@ -26,4 +26,12 @@ public interface RedPacketService {
      * @return 影响记录数
      */
    int decreaseRedPacket(Long id);
+
+    /**
+     * 引入乐观锁扣减红包
+     * @param id 红包编号
+     * @param version 版本号
+     * @return 影响记录数
+     */
+   int decreaseRedPacketForVersion(Long id,Integer version);
 }

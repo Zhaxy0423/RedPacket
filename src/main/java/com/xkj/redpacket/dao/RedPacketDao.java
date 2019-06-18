@@ -39,4 +39,13 @@ public interface RedPacketDao {
      */
     @Update({" update ",TABLE_NAME," set stock = stock-1 where id = #{id}"})
     int decreaseRedPacket(Long id);
+
+    /**
+     * 引入乐观锁，通过版本编号扣减抢红包数，每更新一次，版本增1，其次增加对版本号的判断
+     * @param id 红包编号
+     * @param version 版本号
+     * @return
+     */
+    @Update({" update ",TABLE_NAME," set stock = stock-1,version = version+1 where id = #{id} and version = #{version}"})
+    int decreaseRedPacketForVersion(Long id,Integer version);
 }
