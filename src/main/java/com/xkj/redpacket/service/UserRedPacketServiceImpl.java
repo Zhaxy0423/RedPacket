@@ -28,7 +28,7 @@ public class UserRedPacketServiceImpl implements UserRedPacketService {
 
     /**
      *
-     * 获取红包信息
+     * 加入悲观锁获取红包信息
      * 如果红包库存大于0，扣减剩余红包数目，生成抢红包的信息         *
      * @param redPacketId 红包编号
      * @param userId 抢红包用户信息
@@ -49,6 +49,5 @@ public class UserRedPacketServiceImpl implements UserRedPacketService {
         }
         return FAILED;
     }
-
 
 }

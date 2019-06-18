@@ -32,6 +32,11 @@ public class RedPacketServiceImpl implements RedPacketService{
         return redPacketDao.getRedPacket(id);
     }
 
+    @Override
+    public RedPacket getRedPacketForUpdate(Long id) {
+        return redPacketDao.getRedPacketForUpdate(id);
+    }
+
     /**
      * 使用@Transactional事务注解需要配置回滚或在方法中显式回滚
      */

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class StationController {
     @RequestMapping("/station")
     public String station(){
+
         return "grabRedPacket";
     }
 }

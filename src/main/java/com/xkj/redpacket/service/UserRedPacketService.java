@@ -12,4 +12,5 @@ public interface UserRedPacketService {
      * @return 影响记录数
      */
      int grabRedPacket(Long redPacketId,Long userId);
+
 }

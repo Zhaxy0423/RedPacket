@@ -24,7 +24,7 @@ public class UserRedPacketController {
     }
     @RequestMapping(value="/grabRedPacket")
     @ResponseBody
-    public Map<String,Object> grabRedPacket(@Param("redPacketId") Long redPacketId, @Param("userId") Long userId){
+    public Map<String,Object> grabRedPacketForUpdate(@Param("redPacketId") Long redPacketId, @Param("userId") Long userId){
         int result = userRedPacketService.grabRedPacket(redPacketId, userId);
         Map<String,Object> redPacketMap = new HashMap<>(16);
         boolean flag = result > 0;

@@ -13,10 +13,9 @@
             var max = 30000;
             for (var i = 1; i <= max; i++) {
                 //jQuery的post请求，请注意这是异步请求
-
                 $.post({
                     //请求抢id为1的红包
-                    url: "./userRedPacket/grabRedPacket?redPacketId=1&userId=" + i,
+                    url: "./userRedPacket/grabRedPacket?redPacketId=2&userId=" + i,
                     //成功后的方法
                     success: function (result) {
                     }
