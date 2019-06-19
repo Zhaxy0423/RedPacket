@@ -14,3 +14,13 @@ unit_amount|decimal(12)|单个红包金额
 stock|int(12)|剩余小红包个数
 version|int(12)|版本
 note|varchar(256)|备注
+
+---
+-|用户抢红包表t_user_red_packet|-
+-|-|-
+id|int(12)|红包编号pk
+red_packet_id|int(12)|抢红包用户id
+user_id|int(12)|发红包用户
+amount|decimal(16,2)|红包金额
+grab_date|timestamp|抢红包时间
+note|varchar(256)|备注
